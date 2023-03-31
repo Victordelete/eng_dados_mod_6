@@ -1,0 +1,13 @@
+shop: # isso precisa corresponder ao perfil em seu arquivo dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: C:\Users\Victor Hugo Marques\Documents\VICTOR HUGO\UNB\SANTANDER CODERS\ENG_DADOS\MODULO 6\de-analytics-ebgineering\nimble-acrobat-382123-98589fbf4c71.json
+      project: "nimble-acrobat-382123"
+      dataset: "shop"
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
